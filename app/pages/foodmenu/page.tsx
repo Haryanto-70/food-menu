@@ -106,7 +106,7 @@ export default function Home() {
                 FOOD MENU{" "}
               </h1>
               <h1 className="font-extrabold text-xl text-amber-50  px-32 py-2 text-center">
-                JAVA NOODLE RESTAURANT
+                JAVA Trad'es RESTAURANT
               </h1>
             </div>
           </div>

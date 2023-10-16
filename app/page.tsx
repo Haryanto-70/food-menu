@@ -1,40 +1,32 @@
 import Image from "next/image";
 import FoodCard from "./component/foodcard/foodcard";
 import FoodMenu from "./component/foodmenu/foodmenu";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <>
       <div>
-        <div
-          className="food-bg"
-          style={{
-            width: "full",
-            background: "yellow",
-            alignContent: "center",
-            display: "flex",
-          }}
-        >
-          <div className="relative flex  justify-center bg-slate-50 ">
-            <Image
-              src="/images/background.jpeg"
-              alt="background"
-              width="102400"
-              height="200"
-            />
-          </div>
-          <div className="absolute flex justify-center w-full mt-16 ">
-            <div className="flex-col">
-              <h1 className="font-extrabold text-3xl text-amber-50 bg-slate-800 px-32 py-4 text-center">
-                FOOD MENU{" "}
-              </h1>
-              <h1 className="font-extrabold text-3xl text-amber-50 bg-slate-800 px-32 py-4 text-center">
-                JAVA TRADITIONAL
-              </h1>
-            </div>
-          </div>
+        <div className="  flex flex-col items-center align-middle h-screen bg-slate-200 pt-8">
+          <Link
+            className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold text-center"
+            href="/pages/foodmenu"
+          >
+            FOOD MENU
+          </Link>
+          <button
+            className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold"
+            type="button"
+          >
+            FOOD MENU 2
+          </button>
+          <button
+            className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold"
+            type="button"
+          >
+            FOOD MENU 3
+          </button>
         </div>
-        <FoodMenu />
       </div>
     </>
   );
