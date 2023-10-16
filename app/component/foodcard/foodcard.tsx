@@ -1,18 +1,20 @@
 import Image from "next/image";
 
 const FoodCard = ({ food }: any) => {
+  const priceOfFood = food.remarks.price;
+
   const foodData = {
     photo: food.photo,
     name: food.name,
     descriptions: {
-      ingredient: "meat, salt",
-      state: "Banten",
-      country: "Indonesia",
+      ingredient: food.descriptions.ingredient,
+      state: food.descriptions.state,
+      country: food.descriptions.country,
     },
     remarks: {
-      price: 55000,
-      rating: 5,
-      review: 10,
+      price: food.remarks.price.toLocaleString(),
+      rating: food.remarks.rating,
+      review: food.remarks.review,
     },
   };
 
@@ -33,7 +35,7 @@ const FoodCard = ({ food }: any) => {
             {foodData.name}
           </h1>
           <div className="flex flex-row">
-            <div className="ml-0 text-sm">
+            <div className="ml-0 text-xs">
               {foodData.descriptions.ingredient} <br />
               {foodData.descriptions.state} <br />
               {foodData.descriptions.country}
@@ -45,7 +47,7 @@ const FoodCard = ({ food }: any) => {
               <p className="text-right text-xs">
                 rating {foodData.remarks.rating}{" "}
               </p>
-              <p className="text-right text-sm">
+              <p className="text-right text-xs">
                 {" "}
                 {foodData.remarks.review} reviews
               </p>
