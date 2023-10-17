@@ -31,7 +31,7 @@ const FoodCard = ({ food }: any) => {
           />
         </div>
         <div className="flex flex-col px-1 border-1 border-slate-600/[0.5] rounded-b-md">
-          <h1 className="  text-center text-sm text-blue-700 font-bold my-2">
+          <h1 className="  text-center text-sm text-blue-700 dark:text-yellow-300 font-bold my-2">
             {foodData.name}
           </h1>
           <div className="flex flex-row">
@@ -40,7 +40,7 @@ const FoodCard = ({ food }: any) => {
               {foodData.descriptions.state} <br />
               {foodData.descriptions.country}
             </div>
-            <div className="mr-0 ml-auto items-end text-sm ">
+            <div className="mr-0 ml-auto items-end text-xs/[18px]">
               <p className="text-right text-yellow-600 font-bold">
                 Rp. {foodData.remarks.price}
               </p>
@@ -55,7 +55,7 @@ const FoodCard = ({ food }: any) => {
                   />
                 </p>
               </p>
-              <p className="text-right text-xs">
+              <p className="text-right text-xs/[12px]">
                 {" "}
                 {foodData.remarks.review} reviews
               </p>
