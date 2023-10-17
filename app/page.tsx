@@ -11,19 +11,19 @@ export default function Home() {
             className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold text-center"
             href="/pages/foodmenu"
           >
-            FOOD MENU
+            RESTO MENU
           </Link>
           <button
             className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold"
             type="button"
           >
-            FOOD MENU 2
+            UMKM AKUTANSI
           </button>
           <button
             className="bg-green-700 w-48 p-6 my-2 text-yellow-50 rounded-md font-bold"
             type="button"
           >
-            FOOD MENU 3
+            SISTEM ANTRIAN
           </button>
         </div>
       </div>
