@@ -31,7 +31,7 @@ export default function Home() {
         country: "Indonesia",
       },
       remarks: {
-        price: 55000,
+        price: 50000,
         rating: 5,
         review: 10,
       },
@@ -46,7 +46,7 @@ export default function Home() {
         country: "Indonesia",
       },
       remarks: {
-        price: 55000,
+        price: 75000,
         rating: 5,
         review: 10,
       },
@@ -61,7 +61,7 @@ export default function Home() {
         country: "Indonesia",
       },
       remarks: {
-        price: 55000,
+        price: 35000,
         rating: 5,
         review: 10,
       },
@@ -76,7 +76,7 @@ export default function Home() {
         country: "Indonesia",
       },
       remarks: {
-        price: 55000,
+        price: 25000,
         rating: 5,
         review: 10,
       },
