@@ -85,37 +85,44 @@ export default function Home() {
   return (
     <>
       <div>
-        <div
-          className="food-bg"
-          style={{
-            width: "full",
-            background: "yellow",
-            alignContent: "center",
-            display: "flex",
-          }}
-        >
-          <div className="relative flex justify-center bg-slate-50 ">
-            <Image
-              className="w-full aspect-[16/7]"
-              src="/images/foodmenu/background.jpeg"
-              alt="background"
-              width="1024"
-              height="200"
-            />
-          </div>
-          <div className="absolute flex justify-center w-full mt-8 ">
-            <div className="flex-col bg-slate-800/[0.7]">
-              <h1 className="font-extrabold text-2xl text-amber-50  px-32 py-2 text-center">
-                {pageName}
-              </h1>
-              <h1 className="font-extrabold text-xl text-amber-50  px-32 py-2 text-center">
-                {restoName}
-              </h1>
+        <div className="hidden md:flex justify-center mt-12">
+          <h1 className="bg-red-700 w-48 p-3 text-slate-200 text-center">
+            Mobile Size Only
+          </h1>
+        </div>
+        <div className="md:hidden">
+          <div
+            className="food-bg"
+            style={{
+              width: "full",
+              background: "yellow",
+              alignContent: "center",
+              display: "flex",
+            }}
+          >
+            <div className="relative flex justify-center bg-slate-50 ">
+              <Image
+                className="w-full aspect-[16/7]"
+                src="/images/foodmenu/background.jpeg"
+                alt="background"
+                width="1024"
+                height="200"
+              />
+            </div>
+            <div className="absolute flex justify-center w-full mt-8 ">
+              <div className="flex-col bg-slate-800/[0.7]">
+                <h1 className="font-extrabold text-2xl text-amber-50  px-32 py-2 text-center">
+                  {pageName}
+                </h1>
+                <h1 className="font-extrabold text-xl text-amber-50  px-32 py-2 text-center">
+                  {restoName}
+                </h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-2">
-          <FoodMenu foodList={foodList} />
+          <div className="mt-2">
+            <FoodMenu foodList={foodList} />
+          </div>
         </div>
       </div>
     </>
