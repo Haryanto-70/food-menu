@@ -1,4 +1,4 @@
-import FoodCard from "../foodmenu/foodcard/foodcard""
+import FoodCard from "../foodmenu/foodcard/foodcard";
 
 const FoodMenu = ({ foodList }: any) => {
   return (

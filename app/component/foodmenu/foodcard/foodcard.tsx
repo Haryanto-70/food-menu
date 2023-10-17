@@ -23,14 +23,14 @@ const FoodCard = ({ food }: any) => {
       <div className="flex flex-col w-40  ">
         <div className="">
           <Image
-            className="aspect-square w-40 rounded-t-md"
+            className="aspect-square w-40 rounded-md"
             src={foodData.photo}
             alt="pict"
             width="300"
             height="200"
           />
         </div>
-        <div className="flex flex-col px-1 border-2 border-slate-600/[0.5] rounded-b-md">
+        <div className="flex flex-col px-1 border-1 border-slate-600/[0.5] rounded-b-md">
           <h1 className="  text-center text-sm text-blue-700 font-bold my-2">
             {foodData.name}
           </h1>
@@ -45,7 +45,15 @@ const FoodCard = ({ food }: any) => {
                 Rp. {foodData.remarks.price}
               </p>
               <p className="text-right text-xs">
-                rating {foodData.remarks.rating}{" "}
+                rating {foodData.remarks.rating}
+                <p className="float-right">
+                  <Image
+                    src="/images/foodmenu/star.png"
+                    width="15"
+                    height="12"
+                    alt="star"
+                  />
+                </p>
               </p>
               <p className="text-right text-xs">
                 {" "}

@@ -1,6 +1,5 @@
 import Image from "next/image";
-import FoodCard from "./component/foodcard/foodcard";
-import FoodMenu from "./component/foodmenu/foodmenu";
+
 import Link from "next/link";
 
 export default function Home() {
