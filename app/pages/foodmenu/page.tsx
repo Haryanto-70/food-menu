@@ -97,7 +97,7 @@ export default function Home() {
           <div className="relative flex justify-center bg-slate-50 ">
             <Image
               className="w-full aspect-[16/7]"
-              src="/images/background.jpeg"
+              src="/images/foodmenu/background.jpeg"
               alt="background"
               width="1024"
               height="200"
